@@ -139,7 +139,7 @@ function downloadAns() {
     // var fso = new ActiveXObject("Scripting.FileSystemObject");
     // var f = fso.CreateTextFile("Test.txt", true);
     // f.write(ansStr);
-    download("answer.txt", ansStr.join(""));
+    download("answer.txt", ansStr.join("-"));
 }
 //下载配置
 function download(filename, text) {
