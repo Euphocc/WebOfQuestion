@@ -129,7 +129,7 @@ function downloadRes() {
     for (i = 0; i < res.length; i++) {
         resStr[i] = (i + 1) + "---" + res[i].toString() + "\n";
     }
-    download("Test.txt", resStr.join(""));
+    download("Test.txt", resStr.join("-"));
 }
 function downloadAns() {
     let ansStr = [];
