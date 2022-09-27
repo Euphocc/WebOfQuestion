@@ -129,7 +129,7 @@ function downloadRes() {
     for (i = 0; i < res.length; i++) {
         resStr[i] = (i + 1) + "---" + res[i].toString() + "\n";
     }
-    download("Test.txt", resStr.join("-"));
+    download("Test.txt", resStr.join(""));
 }
 function downloadAns() {
     let ansStr = [];
@@ -139,7 +139,7 @@ function downloadAns() {
     // var fso = new ActiveXObject("Scripting.FileSystemObject");
     // var f = fso.CreateTextFile("Test.txt", true);
     // f.write(ansStr);
-    download("answer.txt", ansStr.join("-"));
+    download("answer.txt", ansStr.join(""));
 }
 //下载配置
 function download(filename, text) {
